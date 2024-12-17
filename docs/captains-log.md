@@ -44,3 +44,6 @@ stick to it very well, but it will be good practice.
 I found some great rust CI examples in the
 [actions-rs](https://github.com/actions-rs) repo. I'm going to use them to set
 up a build workflow for this project.
+
+I set up a template for the STM32F411E board.
+https://studiofuga.com/blog/2022-10-18-getting-started-with-rust-and-stm32f411/
