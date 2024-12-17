@@ -1,6 +1,6 @@
 [workspace]
 resolver = "2"
-members = ["crates/ahab"]
+members = ["crates/ahab", "crates/ahab_msp432"]
 
 [workspace.package]
 authors = ["Philip Linden <philiplinden@gmail.com>"]

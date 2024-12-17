@@ -38,6 +38,8 @@ Zero for flight, the 4B is really easy to set up on the network, has plenty of
 headroom, and will serve as a good testbed for now. It could also host other
 development services like a web server, database, Jenkins, etc if I need it to.
 
+https://github.com/rust-embedded/rust-raspberrypi-OS-tutorials
+
 I should start using Linear for project management for this. I probably won't
 stick to it very well, but it will be good practice.
 
@@ -47,3 +49,12 @@ up a build workflow for this project.
 
 I set up a template for the STM32F411E board.
 https://studiofuga.com/blog/2022-10-18-getting-started-with-rust-and-stm32f411/
+
+I set up a template for the MSP432 too.
+- https://github.com/rust-embedded/msp430-quickstart (not this board, but close)
+- https://docs.rs-online.com/3934/A700000006811369.pdf
+- https://github.com/MSP432P401R-Launchpad-Rust
+- https://github.com/msp432-rust/msp432p401r-hal
+- https://github.com/msp432-rust/msp432p401r-pac
+- https://github.com/pcein/msp432p401r
+- https://github.com/pcein/msp432-newio
