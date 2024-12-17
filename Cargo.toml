@@ -1,13 +1,9 @@
 [workspace]
 resolver = "2"
-members = []
+members = ["crates/ahab"]
 
 [workspace.package]
-name = "ahab"
 authors = ["Philip Linden <philiplinden@gmail.com>"]
-description = "Ahab is a high altitude balloon"
-version = "0.1.0"
 edition = "2021"
-readme = "README.md"
 license-file = "LICENSE-APACHE"
 license = "MIT or Apache-2.0"

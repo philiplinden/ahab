@@ -1,0 +1,9 @@
+[package]
+name = "ahab"
+authors.workspace = true
+description = "Ahab is a high altitude balloon"
+edition.workspace = true
+license-file.workspace = true
+license.workspace = true
+
+[dependencies]

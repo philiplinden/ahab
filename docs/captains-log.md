@@ -40,3 +40,7 @@ development services like a web server, database, Jenkins, etc if I need it to.
 
 I should start using Linear for project management for this. I probably won't
 stick to it very well, but it will be good practice.
+
+I found some great rust CI examples in the
+[actions-rs](https://github.com/actions-rs) repo. I'm going to use them to set
+up a build workflow for this project.
