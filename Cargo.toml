@@ -1,6 +1,10 @@
 [workspace]
 resolver = "2"
-members = ["crates/ahab", "crates/ahab_msp432", "crates/ahab_stm32"]
+members = [
+    "crates/ahab",
+    # "crates/ahab_msp432",
+    # "crates/ahab_stm32",
+]
 
 [workspace.package]
 authors = ["Philip Linden <philiplinden@gmail.com>"]
