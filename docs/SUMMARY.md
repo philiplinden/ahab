@@ -6,6 +6,7 @@
 ---
 
 - [structure](design/structure.md)
+- [sensors](design/sensors.md)
 
 ---
 
