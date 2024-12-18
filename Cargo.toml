@@ -2,14 +2,19 @@
 resolver = "2"
 members = [
     "crates/ahab",
+    "crates/ahab_stm32f11ve",
     # "crates/ahab_msp432",
-    # "crates/ahab_stm32",
 ]
 
 [workspace.package]
 authors = ["Philip Linden <philiplinden@gmail.com>"]
 edition = "2021"
 license = "MIT or Apache-2.0"
+
+[workspace.dependencies]
+cortex-m-rt = "0.7"
+panic-halt = "1.0.0"
+rtt-target = { version = "0.6.1", features = ["log"] }
 
 [profile.release]
 codegen-units = 1 # better optimizations
