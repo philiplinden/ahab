@@ -62,3 +62,10 @@ I set up a template for the MSP432 too.
 Turns out the MSP432 uses the TM4C129 chip, which can be used with the
 [cortex-m-quickstart](https://docs.rs/cortex-m-quickstart/~0.2.3) cargo-generate
 template. I set that up but I'm not sure if the `memory.x` file is correct.
+
+I ended up fighting the compiler for a while, trying to get the panic handler
+to work. I ended up just using the `panic-semihosting` crate for now because
+that's what would compile. Using `panic-halt` or `panic-abort` required using
+deprecated features I guess? After switching to the `panic-semihosting` crate, I
+started running into linker errors. I'll have to figure this out later once I
+am actually flashing the boards with code I understand, rather than templates.

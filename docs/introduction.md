@@ -7,7 +7,7 @@ I want to start with what's in my drawer, so there's not a lot to choose from.
 - tiny gps breakout https://www.sparkfun.com/products/retired/10995
 - rpi 4b
 - rpi zero w 1.1
-- msp430
+- msp432
 - stm32F411e
 - arduino mkr fpga https://www.arduino.cc/en/Guide/MKRVidor4000
 - a TTL camera

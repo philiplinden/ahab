@@ -1,11 +1,10 @@
 [workspace]
 resolver = "2"
-members = ["crates/ahab", "crates/ahab_msp432"]
+members = ["crates/ahab", "crates/ahab_msp432", "crates/ahab_stm32"]
 
 [workspace.package]
 authors = ["Philip Linden <philiplinden@gmail.com>"]
 edition = "2021"
-license-file = "LICENSE-APACHE"
 license = "MIT or Apache-2.0"
 
 [profile.release]
