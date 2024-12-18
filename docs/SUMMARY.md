@@ -10,8 +10,8 @@
 
 # STM32F411VE
 
-- [getting started](docs/stm32f411ve/getting-started.md)
-- [debugging](docs/stm32f411ve/debugging.md)
+- [getting started](stm32/getting-started.md)
+- [debugging](stm32/debugging.md)
 
 ---
 
