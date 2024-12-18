@@ -45,9 +45,13 @@ out with a simulation, abstraction, or an actual physical system. (The obvious
 exception here is the "world" block, but hopefully it is equally obvious how to
 swap that out with a simulation or real system... you fly it!)
 
-| Block           | Examples                                 | Flavor of Rust                                      |
-| --------------- | ---------------------------------------- | --------------------------------------------------- |
-| The World       | Physics engine, weather simulation, etc. | Bevy (game engine) and/or regular Rust (std)        |
-| Sensors         | IMU, GPS, etc.                           | Embedded Rust (no-std)                              |
-| Computers       | Logger, altitude controller, etc.        | Regular Rust (std) or embedded Rust (no-std)        |
-| User Interfaces | CLI, web app, etc.                       | Bevy (game engine), Egui, and/or regular Rust (std) |
+| Block           | Examples                                 | Flavor of Rust                                      | Project                                      |
+| --------------- | ---------------------------------------- | --------------------------------------------------- | -------------------------------------------- |
+| Sensors         | IMU, GPS, etc.                           | Embedded Rust (no-std)                              | [ahab](https://github.com/philiplinden/ahab) |
+| Computers       | Logger, altitude controller, etc.        | Regular Rust (std) or embedded Rust (no-std)        | [ahab](https://github.com/philiplinden/ahab) |
+| The World       | Physics engine, weather simulation, etc. | Bevy (game engine) and/or regular Rust (std)        | [yahs](https://github.com/philiplinden/yahs) |
+| User Interfaces | CLI, web app, etc.                       | Bevy (game engine), Egui, and/or regular Rust (std) | [yahs](https://github.com/philiplinden/yahs) |
+
+To simplify things (ha!) we can offload the "world" and UI blocks to other
+projects like [yahs](https://github.com/philiplinden/yahs). Codevelopment is
+good but spaghetti interdependencies are bad.

@@ -1,7 +1,7 @@
 # Contents
 
 - [introduction](introduction.md)
-- [getting-started](getting-started.md)
+- [getting started](getting-started.md)
 
 ---
 
@@ -9,4 +9,4 @@
 
 ---
 
-- [captains-log](captains-log.md)
+- [captain's log](captains-log.md)
