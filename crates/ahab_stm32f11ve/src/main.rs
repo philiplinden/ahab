@@ -2,6 +2,7 @@
 #![no_main]
 
 use cortex_m_rt::entry;
+use panic_halt as _;
 
 /// The entry point of the program.
 ///

@@ -94,3 +94,6 @@ tutorial and documenting the process in
 [docs/stm32/getting-started.md](docs/stm32/getting-started.md). I can always
 re-use the template code if I need it, but building up from scratch is great
 practice to learn what all of these files do and how they fit together.
+
+Woohoo! I got a (dummy) program to compile for the STM32F411E board! Now to
+flash it...

@@ -13,6 +13,7 @@ license = "MIT or Apache-2.0"
 
 [workspace.dependencies]
 cortex-m-rt = "0.7"
+panic-halt = "1.0.0"
 
 [profile.release]
 codegen-units = 1 # better optimizations
