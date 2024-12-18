@@ -96,4 +96,16 @@ re-use the template code if I need it, but building up from scratch is great
 practice to learn what all of these files do and how they fit together.
 
 Woohoo! I got a (dummy) program to compile for the STM32F411E board! Now to
-flash it...
+flash it... Nice, it worked!
+
+There is one hang up though. When I `cargo build` from the root, it tries to
+compile the embedded crates for the host arch. I want to edit `Cargo.toml` at
+the root to effectively do the same thing as specifying the target arch in
+`.cargo/config.toml` for each crate.
+
+https://doc.rust-lang.org/cargo/reference/unstable.html#per-package-target
+
+https://nnarain.github.io/2021/08/02/Setting-up-per-package-targets-in-Rust.html
+
+I had to add `cargo-features = ["per-package-target"]` to the `Cargo.toml` file,
+which is an unstable `nightly` feature.
