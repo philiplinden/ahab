@@ -84,3 +84,5 @@ the real world. With Rust, hopefully we can write tests and benchmarks for the
 software and firmware so that they behave exactly the same way in each case. The
 tricky bit is how to handle the interface between the simulated environments and
 the real environments for things like sensors and actuators.
+
+--> [design/structure.md](design/structure.md)

@@ -5,7 +5,7 @@
 
 ---
 
-- [design](design.md)
+- [structure](design/structure.md)
 
 ---
 
