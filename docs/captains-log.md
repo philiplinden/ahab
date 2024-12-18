@@ -69,3 +69,18 @@ that's what would compile. Using `panic-halt` or `panic-abort` required using
 deprecated features I guess? After switching to the `panic-semihosting` crate, I
 started running into linker errors. I'll have to figure this out later once I
 am actually flashing the boards with code I understand, rather than templates.
+
+The root cause looks to be related to this comment
+[from the miri repo](https://github.com/rust-lang/miri/issues/3498):
+> you added a crate as dependency that depends on std, and built a sysroot
+> without std, and then that fails to build. No surprise here.
+
+Oh well.
+
+I thought some more about how to structure the project so that I can swap out
+blocks of logic easily between simulated code on my PC, code running on a board
+in a hardware-in-the-loop simulation, and actual code running on the board in
+the real world. With Rust, hopefully we can write tests and benchmarks for the
+software and firmware so that they behave exactly the same way in each case. The
+tricky bit is how to handle the interface between the simulated environments and
+the real environments for things like sensors and actuators.

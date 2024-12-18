@@ -1,5 +1,10 @@
 # Getting Started
 
+Here are some notes on how to set up a development environment to work on this
+project. YMMV.
+
+## Setting up your development environment
+
 1. Install Rust 1.31 or newer.
 2. Add cortex-m targets to your toolchain. We are using Cortex-M4F, so:
    `rustup target add thumbv7em-none-eabihf`
