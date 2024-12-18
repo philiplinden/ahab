@@ -234,4 +234,25 @@ big brother of `cargo-flash`. It can also flash a target just like
         Done processing config default
 ```
 
+We can cache the chip info so we don't have to type it out every time using an
+`Embed.toml` file that `cargo embed` will look for in the project root.
+
+```toml
+# Embed.toml
+chip = "stm32f411ve"
+```
+
+Now we can run `cargo embed` and it will pull the arguments from the config.
+
+```sh
+❯ cargo embed
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.02s
+      Config default
+      Target E:\repos\philiplinden\ahab\target\thumbv7em-none-eabihf\debug\ahab_stm32f11ve
+      Erasing ✔ 100% [####################]  16.00 KiB @  40.25 KiB/s (took 0s)
+  Programming ✔ 100% [####################]   2.00 KiB @   4.15 KiB/s (took 0s)
+     Finished in 0.48s
+        Done processing config default
+```
+
 😎

@@ -6,10 +6,10 @@ name = "ahab_stm32f11ve"
 version = "0.1.0"
 
 [dependencies]
-# cortex-m = { version = "0.7.6", features = ["critical-section-single-core"] }
+cortex-m = { version = "0.7.6", features = ["critical-section-single-core"] }
 cortex-m-rt = { workspace = true }
 panic-halt = { workspace = true }
-# stm32f4xx-hal = { version = "0.22.1", features = ["stm32f411"] }
+rtt-target = { version = "0.6.1", features = ["log"] }
 
 [[bin]]
 name = "ahab_stm32f11ve"
