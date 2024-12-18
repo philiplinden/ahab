@@ -86,3 +86,11 @@ tricky bit is how to handle the interface between the simulated environments and
 the real environments for things like sensors and actuators.
 
 --> [design/structure.md](design/structure.md)
+
+And now, it's time to [dive in to embedded rust](https://youtu.be/TOAynddiu5M).
+
+I deleted most of the template code and started from scratch following this
+tutorial and documenting the process in
+[docs/stm32/getting-started.md](docs/stm32/getting-started.md). I can always
+re-use the template code if I need it, but building up from scratch is great
+practice to learn what all of these files do and how they fit together.

@@ -1,12 +1,16 @@
 # Contents
 
+# Home
+
 - [introduction](introduction.md)
-- [getting started](getting-started.md)
+- [structure](design/structure.md)
+- [sensors](design/sensors.md)
 
 ---
 
-- [structure](design/structure.md)
-- [sensors](design/sensors.md)
+# STM32F411VE
+
+- [getting started](docs/stm32/getting-started.md)
 
 ---
 
