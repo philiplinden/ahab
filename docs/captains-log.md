@@ -1,5 +1,70 @@
 # captain's log
 
+## 2024-12-19
+
+Today I'll try to [blinky](https://www.youtube.com/watch?v=A9wvA_S6m7Y):
+[blinky](stm32/blinky.md). After that I'll try to do it again with embassy.
+
+From the
+[example](https://github.com/embassy-rs/embassy/tree/main/examples/stm32f4), it
+looks like `embassy` doesn't replace the `cortex-m` crates, it just adds
+convenience functions and ergonomics to it.
+
+I stole some other options from the example's `Cargo.toml` file too like
+`panic-probe` and `defmt`.
+
+> Panic-Probe is a Rust crate that enables `probe-run`, a tool for running
+> embedded Rust applications like native applications. It provides a panic
+> handler for `probe-run`, allowing you to write integration tests that run on
+> your embedded device via `cargo test`.
+
+and
+
+> `defmt` ("de format", short for "deferred formatting") is a highly efficient
+> logging framework that targets resource-constrained devices, like
+> microcontrollers. `println!`-like formatting, multiple logging levels,
+> compile-time `RUST_LOG`-like filtering of logs, and timestamped logs.
+
+When compiling, I'm finding that something about `embassy-time` is causing the
+build to fail. I can successfully compile and build an embassy script without
+`embassy-time` but any time I import a timer, it fails to compile. I might be
+able to get around this by using `use embassy::time::{Duration, Timer};`.
+
+Hm, a search engine AI says
+> Undefined symbol _embassy_time_schedule_wake: The linker error occurs when
+> trying to link the embassy_time crate with the generic-queue feature enabled.
+> The error message indicates that there are multiple definitions of the
+> _embassy_time_schedule_wake symbol.
+> [Github Issue](https://github.com/embassy-rs/embassy/issues/1109)
+
+And in that github issue I think I found some breadcrumbs toward a
+[solution](https://github.com/embassy-rs/embassy/issues/1109#issuecomment-1346256031).
+
+> To use timers, some backend must be provided through crate features –
+> otherwise, linking will fail and complain about a missing
+> `_embassy_time_schedule_wake` symbol.
+> 
+> Possible backends are:
+> - The `integrated-timers` feature of the `embassy-executor` crate. If you use
+>   this and no other executor, this is preferred.
+> - (Something for ESP?)
+> - The `generic-queue` feature of the embassy-time crate. Use this if you use
+>   multiple executors, or one not listed above.
+
+This didn't work alone, but I was able to get it to build once I added the
+`time-driver-tim4` and `time` features to the `embassy-stm32` crate alongside
+the `integrated-timers` feature in `embassy-executor`.
+
+I ran into another issue when trying to reflash the board.
+
+It looks very similar to the issue described
+[here](https://users.rust-lang.org/t/probe-rs-fails-to-work-after-first-time-use-successful/103234/4)
+which was resolved by adding `--connect-under-reset` to the `probe-rs` command.
+After adding this option, flashing has been reliably working.
+
+I also confirmed that embassy with the `memory-x` feature does indeed let us
+delete the `memory.x` file from our repo and ignore it from the build process!
+
 ## 2024-12-18
 
 There's a rust project that claims to support raspberry pi and stm32 boards,

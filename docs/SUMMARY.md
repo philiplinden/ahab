@@ -12,6 +12,7 @@
 
 - [getting started](stm32/getting-started.md)
 - [debugging](stm32/debugging.md)
+- [blinky](stm32/blinky.md)
 
 ---
 
