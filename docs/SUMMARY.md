@@ -3,8 +3,8 @@
 # Home
 
 - [introduction](introduction.md)
-- [structure](design/structure.md)
-- [sensors](design/sensors.md)
+- [system architecture](design/system-architecture.md)
+- [hardware](design/hardware.md)
 
 ---
 

@@ -1,4 +1,4 @@
-# Structure
+# System Architecture
 
 In the [introduction](introduction.md) I mentioned that Rust allows us to
 _theoretically_ write everything in Rust. This is a sketch of how I think the
@@ -27,7 +27,7 @@ Let's see if we can break down those systems into "blocks" of systems.
   a self-contained system. There are known physics rules and the state of those
   objects continues to evolve by those rules without any external input from an
   agent.
-- **[Sensors](sensors.md)** - Physically, sensors are self-contained systems.
+- **Sensors** - Physically, sensors are self-contained systems.
   They observe data about the world and convert it into some format, then ship
   it elsewhere. The source of the observation and the destination of the data
   can be abstracted or simulated or whatever. Sensors are often simple hardware

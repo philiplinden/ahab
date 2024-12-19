@@ -1,5 +1,50 @@
 # captain's log
 
+## 2024-12-18
+
+There's a rust project that claims to support raspberry pi and stm32 boards,
+[embassy.dev](https://docs.embassy.dev/embassy-stm32/git/stm32f411ve/index.html)
+that looks interesting. I'm not sure how it differs from the `cortex-m` crates
+I've been using, but it might be worth checking out.
+
+- It looks like Embassy can auto-generate the `memory.x` file for the board.
+- The docs are really good and filtered by the specific chipset.
+- Doesn't look like it supports the MSP432.
+
+I also did some shopping for parts, but I didn't order anything yet. Here are
+the parts I'm considering:
+
+- [RFM96W LoRa Transceiver (915 MHz)](https://www.sparkfun.com/products/12775).
+  This also comes in a 433 MHz version, but as far as I can tell it's a region
+  lock thing---The Americas use 915 Mhz for the license-free ISM band. The 915
+  MHz version has an operating power of up to 100 mW and 300 kbps, which should
+  be enough for me.
+- [NEO-M9N GPS](https://www.sparkfun.com/products/18378). According to
+  the datasheet it should work up to 80 km. This is the newest version of this
+  chip but I think modules as old as NEO-M6 would work.
+- [BME280 Atmospheric Sensor](https://www.sparkfun.com/products/15440). The
+  myth, the legend, the classic pressure, humidity, and temperature sensor.
+
+Some other parts that are overkill but would be nice to have:
+
+- [Qwiic MicroPressure Sensor](https://www.sparkfun.com/products/16476). This is
+  a barometer that has a calibrated sensing range of 60mbar to 2.5bar. I think
+  it would be useful to have a sensitive barometer for higher altitudes where a
+  more general purpose barometer might not be sensitive enough.
+- [OpenLog Artemis](https://www.sparkfun.com/products/16832). This is a
+  data logger board with a built-in IMU, voltage loggers, some high-rate
+  sampling for a few channels or ~250Hz logging in general. It automatically
+  detects, configures, and logs Qwiic boards, including all the sensors I'd want
+  to use for this project.
+- [Waveshare Environment Sensor HAT](https://www.waveshare.com/environment-sensor-hat.htm).
+  This is basically a glorified BME280 carrier board with a few other sensors
+  like UV, air quality, and convenient Raspberry Pi GPIO headers.
+- [BerryGPS-IMU](https://ozzmaker.com/product/berrygps-imu/). A fancy all-in-one
+  motion sensor designed to fit perfectly with the Raspberry Pi Pico. Fancy.
+  Overkill. Cool, though. It has a GPS, 10DOF IMU, barometric altimeter,
+  magnetometer, and temperature sensor. This board uses the CAM-M8 GPS module
+  from u-blox, which dies at 50 km altitude.
+
 ## 2024-12-17
 
 Ahab is a fitting name for this project. It is a high altitude balloon. It is
