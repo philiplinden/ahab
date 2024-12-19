@@ -20,7 +20,7 @@ The [STM32F411VE](https://www.st.com/resource/en/datasheet/stm32f411ve.pdf) has
 | `USB  LD7` | Green     | Indicates when `VBUS` is present on `CN5` and is connected to `PA9`        |
 | `USB  LD8` | Red       | Indicates an overcurrent from `VBUS` of `CN5`                              |
 
-![LEDs](_assets/stm32f411ve-led-locations.png)
+![LEDs](_assets/stm32f411ve-led-locations.jpg)
 
 Turn on the green LED, we need to set `PD12` to `HIGH`. To manipulate this pin
 we need to make reads or writes to the GPIO peripheral that drives it.

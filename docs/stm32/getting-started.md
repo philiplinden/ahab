@@ -125,7 +125,7 @@ a `memory.x` file that specifies the flash and RAM memory layouts of the target.
 According to the datasheet, the flash memory is at `0x0800 0000 - 0x0807 FFFF`
 and the RAM is at `0x2000 0000 - 0x2002 0000`.
 
-![stm32f411ve memory map](_assets/stm32f411ve-memory-map.png)
+![stm32f411ve memory map](_assets/stm32f411ve-memory-map.jpg)
 
 Another thing that is required by the `cortex-m-rt` runtime is a panic handler.
 A panic handler accepts a `PanicInfo` argument and never returns. This code will
