@@ -91,4 +91,4 @@ Aaaaaand it doesn't work for me. This seems like
 [an active issue](https://github.com/probe-rs/probe-rs/issues/1057) with
 `probe-rs`, as indicated by the log message "GDB **stub** listening...".
 
-Stick to RTT for now.
+Stick to RTT for now, at least when using a Windows host.
