@@ -62,6 +62,9 @@ It looks very similar to the issue described
 which was resolved by adding `--connect-under-reset` to the `probe-rs` command.
 After adding this option, flashing has been reliably working.
 
+I also confirmed that embassy with the `memory-x` feature does indeed let us
+delete the `memory.x` file from our repo and ignore it from the build process!
+
 ## 2024-12-18
 
 There's a rust project that claims to support raspberry pi and stm32 boards,
