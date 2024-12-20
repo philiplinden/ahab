@@ -43,3 +43,8 @@ embassy-time = { version = "0.3.2", features = [
 name = "ahab_stm32f11ve"
 test = false
 bench = false
+
+[[bin]]
+name = "blinky"
+test = false
+bench = false
