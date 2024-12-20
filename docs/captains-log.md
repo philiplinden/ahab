@@ -1,5 +1,10 @@
 # captain's log
 
+## 2024-12-20
+
+[down-detector](stm32/down-detector.md).
+
+
 ## 2024-12-19
 
 Today I'll try to [blinky](https://www.youtube.com/watch?v=A9wvA_S6m7Y):
