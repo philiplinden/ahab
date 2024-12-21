@@ -1,14 +1,18 @@
 # captain's log
 
+## 2024-12-21
+
+Renamed the `stm32` directory to `hello-world`.
+
 ## 2024-12-20
 
-[down-detector](stm32/down-detector.md).
+[down-detector](hello-world/down-detector.md).
 
 
 ## 2024-12-19
 
 Today I'll try to [blinky](https://www.youtube.com/watch?v=A9wvA_S6m7Y):
-[blinky](stm32/blinky.md). After that I'll try to do it again with embassy.
+[blinky](hello-worldblinky.md). After that I'll try to do it again with embassy.
 
 From the
 [example](https://github.com/embassy-rs/embassy/tree/main/examples/stm32f4), it
@@ -206,7 +210,7 @@ And now, it's time to [dive in to embedded rust](https://youtu.be/TOAynddiu5M).
 
 I deleted most of the template code and started from scratch following this
 tutorial and documenting the process in
-[docs/stm32/getting-started.md](docs/stm32/getting-started.md). I can always
+[docs/hello-worldgetting-started.md](docs/hello-worldgetting-started.md). I can always
 re-use the template code if I need it, but building up from scratch is great
 practice to learn what all of these files do and how they fit together.
 

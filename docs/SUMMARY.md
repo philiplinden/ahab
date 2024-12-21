@@ -8,11 +8,11 @@
 
 ---
 
-# STM32F411VE
+# Hello World (STM32F411VE)
 
-- [getting started](stm32/getting-started.md)
-- [debugging](stm32/debugging.md)
-- [blinky](stm32/blinky.md)
+- [getting started](hello-world/getting-started.md)
+- [debugging](hello-world/debugging.md)
+- [blinky](hello-world/blinky.md)
 
 ---
 

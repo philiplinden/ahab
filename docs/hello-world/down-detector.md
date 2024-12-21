@@ -5,6 +5,16 @@ to practice working with the board could be to illuminate the LED that is
 closest to "down" according to the sensors onboard. Eventually this sensor data
 would be sent elsewhere, but why not start small.
 
+| Name       | Color  | Notes                        |
+| ---------- | ------ | ---------------------------- |
+| `User LD3` | Orange | User-programmable at `PD13`. |
+| `User LD4` | Green  | User-programmable at `PD12`. |
+| `User LD5` | Red    | User-programmable at `PD14`. |
+| `User LD6` | Blue   | User-programmable at `PD15`. |
+
+![LEDs](_assets/stm32f411ve-led-locations.jpg)
+
+
 ```
 Top View of Board (LEDs with colors and pins)
     
