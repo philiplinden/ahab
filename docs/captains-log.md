@@ -23,6 +23,11 @@ The [Nucleus](https://github.com/Brickworks/Nucleus) HAB used a Pi 4 compute
 module as the main computer, so using a Pi for flight might be a good idea if I
 want to continue that project someday.
 
+Turns out I have the MB1115B variant, which uses
+- [L3GD20 3-axis gyroscope](../crates/ahab_stm32f11ve/docs/l3gd20.pdf)
+- [LSM303DLHC e-compass](../crates/ahab_stm32f11ve/docs/lsm303dlhc.pdf)
+- [MP45DT02 digital MEMS microphone](../crates/ahab_stm32f11ve/docs/mp45dt02.pdf)
+
 ## 2024-12-20
 
 [down-detector](hello-world/down-detector.md).
