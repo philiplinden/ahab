@@ -4,6 +4,25 @@
 
 Renamed the `stm32` directory to `hello-world`.
 
+I did some more thinking about the performance considerations of the RPi Zero,
+MSP432, and STM32F411xx. The MSP432 is the most power-efficient at idle, but I'm
+not expecting to operate the balloon for weeks at idle. The STM32 board is a bit
+faster and more power-efficient than the RPi Zero, but not as efficient as the
+MSP432. The RPi Zero is the fastest and least power-efficient of the three, but
+it is far more flexible and capable than the other two. If I want to do imaging,
+the RPi Zero is the only realistic option due to compute and memory. If I leave
+out imaging, the STM32 is plenty. The dev board for the STM32F411VE comes with
+handy sensors that will be useful to me too. In the end, I think I'll use the
+STM32F411VE for flight and the RPi Zero for ground station.
+
+I'm not sure how radio factors into this yet. Maybe the RPi Zero will be
+necessary for radio and I can fly them as a pair. I have a full size Pi 4B
+sitting around that I could use for ground station.
+
+The [Nucleus](https://github.com/Brickworks/Nucleus) HAB used a Pi 4 compute
+module as the main computer, so using a Pi for flight might be a good idea if I
+want to continue that project someday.
+
 ## 2024-12-20
 
 [down-detector](hello-world/down-detector.md).
