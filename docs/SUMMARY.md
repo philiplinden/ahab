@@ -14,8 +14,3 @@
 - [debugging](hello-world/debugging.md)
 - [blinky](hello-world/blinky.md)
 
----
-
-# Development
-
-- [captain's log](captains-log.md)

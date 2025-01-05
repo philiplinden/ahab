@@ -43,7 +43,7 @@ From page 32 of the datasheet:
 > I ran into a lot of trouble getting the system to build and flash reliably.
 > Eventually I found that embassy needs a specific combination of features to
 > be enabled, and `probe-rs` needs to have certain options. See
-> [captain's log 2024-12-19](../captains-log.md#2024-12-19) for details.
+> [captain's log 2024-12-19](../captains-log/index.md#2024-12-19) for details.
 
 ```rust
 #![no_std]
