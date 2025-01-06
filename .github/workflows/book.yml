@@ -14,7 +14,11 @@ on:
 env:
   CARGO_TERM_COLOR: always
   RUST_LOG: info
-  
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -30,13 +34,18 @@ jobs:
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
-      - name: Build with mdBook
-        run: mdbook build
+      - name: Install mdbook and plugins
+        run: |
+          cargo install mdbook-admonish --force
+          cargo install mdbook-katex --force
+          cargo install mdbook-mermaid --force
+          cargo install mdbook-yml-header --force
+      - name: Build Book
+        run: mdbook build docs
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./docs/book
-
   deploy:
     environment:
       name: github-pages

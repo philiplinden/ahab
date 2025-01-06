@@ -3,8 +3,8 @@
 # Home
 
 - [introduction](introduction.md)
-- [system architecture](design/system-architecture.md)
-- [hardware](design/hardware.md)
+- [system-sketch](design/system-sketch.md)
+- [sensors-to-use](design/sensors-to-use.md)
 
 ---
 
@@ -13,4 +13,3 @@
 - [getting started](hello-world/getting-started.md)
 - [debugging](hello-world/debugging.md)
 - [blinky](hello-world/blinky.md)
-
