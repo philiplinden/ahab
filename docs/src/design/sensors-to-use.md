@@ -1,4 +1,4 @@
-# Hardware
+# Sensors to use
 
 ## Observables
 

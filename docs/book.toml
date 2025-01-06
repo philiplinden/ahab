@@ -3,10 +3,9 @@ authors = ["Philip Linden"]
 language = "en"
 multilingual = false
 title = "ahab documentation"
-src = "docs"
 
 [build]
-build-dir = "docs/book"
+build-dir = "book"
 create-missing = false
 
 [output.html]
@@ -18,6 +17,8 @@ smart-punctuation = true
 git-repository-url = "https://github.com/philiplinden/ahab"
 git-repository-icon = "fa-github"
 edit-url-template = "https://github.com/philiplinden/ahab/edit/main/docs/{path}"
+additional-css = ["./plugins/mdbook-admonish.css"]
+additional-js = ["./plugins/mermaid.min.js", "./plugins/mermaid-init.js"]
 
 [output.html.print]
 enable = true    # include support for printable output
@@ -26,3 +27,12 @@ page-break = true # insert page-break after each chapter
 [output.html.fold]
 enable = true     # whether or not to enable section folding
 level = 1         # the depth to start folding
+
+[preprocessor.yml-header]
+
+[preprocessor.admonish]
+command = "mdbook-admonish"
+assets_version = "3.0.2" # do not edit: managed by `mdbook-admonish install`
+
+[preprocessor.mermaid]
+command = "mdbook-mermaid"
