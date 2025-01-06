@@ -40,6 +40,8 @@ jobs:
           cargo install mdbook-katex --force
           cargo install mdbook-mermaid --force
           cargo install mdbook-yml-header --force
+      - name: Build Book
+        run: mdbook build docs
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
