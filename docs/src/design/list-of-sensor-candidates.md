@@ -1,3 +1,9 @@
+---
+tags:
+  - design
+  - ideation
+  - sensors
+---
 # Sensors to use
 
 ## Observables

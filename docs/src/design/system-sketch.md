@@ -1,3 +1,8 @@
+---
+tags:
+  - design
+  - ideation
+---
 # System Sketch
 
 In the [introduction](../introduction.md) I mentioned that Rust allows us to

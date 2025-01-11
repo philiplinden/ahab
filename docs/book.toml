@@ -10,8 +10,6 @@ create-missing = false
 
 [output.html]
 mathjax-support = true
-default-theme = "ayu"
-preferred-dark-theme = "ayu"
 smart-punctuation = true
 # no-section-label = true
 git-repository-url = "https://github.com/philiplinden/ahab"

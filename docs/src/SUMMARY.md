@@ -3,8 +3,12 @@
 # Home
 
 - [introduction](introduction.md)
-- [system-sketch](design/system-sketch.md)
-- [sensors-to-use](design/sensors-to-use.md)
+- [system design](design/system-sketch.md)
+	- [list of sensor candidates](design/list-of-sensor-candidates.md)
+	- [main flight computer (mfc)](design/main-flight-computer.md)
+	- [device interface module (dim)](design/device-interface-module.md)
+	- [emulators](design/emulators.md)
+- [simulation](design/simulation.md)
 
 ---
 
