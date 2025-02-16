@@ -1,6 +1,6 @@
 # Introduction
 
-I want to build a small, low-cost, (low-power?) high altitude balloon that "punches above its weight class" in terms of functionality and is grown from the ground up in a Rust ecosystem. The ingredients for this kind of project have been around for a while, and I the last time I tried to do this I got stuck in a few places I'm ready to get past this time.
+I want to build a small, low-cost, (low-power?) autonomous vehicle that "punches above its weight class" in terms of functionality and is grown from the ground up in a Rust ecosystem. The ingredients for this kind of project have been around for a while, and I the last time I tried to do this I got stuck in a few places I'm ready to get past this time.
 
 The previous project suffered from a lack of discipline, way too much complexity, and honest-to-god fear of tools and libraries in Rust.
 
@@ -12,13 +12,13 @@ I want to use Rust for the software and firmware. Embedded Rust is an interestin
 
 The embedded Rust ecosystem is growing quickly, and I think it's a good idea to use it. The higher level software (like what would run on a Raspberry Pi) can be written in Rust, and more institutions are starting to use Rust for their code so it's a good skill to have.
 
-Other systems like Bevyhttps://bevyengine.org/ and remote protocol or networking tools in Rust are growing quickly as well and I think they are suited perfectly for the kinds of needs I will have with this project. Using a game engine like Bevy for modeling and simulation is somewhat novel but I think it's a good fit since it is also Rust native and is fully featured.
+Other systems like [Bevy](https://bevyengine.org/) and remote protocol or networking tools in Rust are growing quickly as well and I think they are suited perfectly for the kinds of needs I will have with this project. Using a game engine like Bevy for modeling and simulation is somewhat novel but I think it's a good fit since it is also Rust native and is fully featured.
 
 ## Everything in the loop
 
 I want to develop the software and firmware with tests that can be run directly on the hardware with everything in the loop. I want to be able to test the software with "fake" inputs and outputs that react as I expect them to in real life. The goal is to have everything working on my desk and then have everything run exactly the same way when it's time for flight.
 
-See: [emulators](design/emulators.md)
+See: [Emulation](design/Emulation.md)
 ## Use what's in my drawer
 
 We don't need to buy anything new or use anything custom. It would be nice, sure, but that's one of the things that killed the last project.

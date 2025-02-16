@@ -6,6 +6,8 @@ tags:
 ---
 # Sensors to use
 
+> [!NOTE] Some info may not apply
+> Some of the sensors and use cases here might not apply to vehicles that are not airborne.
 ## Observables
 
 Here is a (non-exhaustive) list of sensors and the observables they can could

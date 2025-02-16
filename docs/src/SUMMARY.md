@@ -2,13 +2,13 @@
 
 # Home
 
-- [introduction](introduction.md)
-- [system design](design/system-sketch.md)
-	- [list of sensor candidates](design/list-of-sensor-candidates.md)
-	- [main flight computer (mfc)](design/main-flight-computer.md)
-	- [device interface module (dim)](design/device-interface-module.md)
-	- [emulators](design/emulators.md)
-- [simulation](design/simulation.md)
+- [Introduction](Introduction.md)
+- [System Sketch](design/System%20Sketch.md)
+	- [Main Computer](design/Main%20Computer%20(MC).md)
+	- [Device Interface Module (DIM)](design/Device%20Interface%20Module%20(DIM).md)
+	- [List of sensor candidates](design/List%20of%20sensor%20candidates.md)
+- [Emulation](design/Emulation.md)
+- [Physics Simulation](design/Physics%20Simulation.md)
 
 ---
 
