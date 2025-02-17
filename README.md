@@ -1,7 +1,8 @@
 # ahab
-a high altitude balloon (with rust)
+an autonomous vehicle controller (with rust)
 
 **Documentation**: https://philiplinden.github.io/ahab/
+
 ## License
 
 Except where noted (below and/or in individual files), all code in this
